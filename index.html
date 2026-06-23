@@ -1,202 +1,706 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    body {background-color: #0c0c0d}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475}
-    p.p4 {margin: 0.0px 0.0px 18.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 9.0px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 9.0px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475; min-height: 11.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 9.0px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p9 {margin: 0.0px 0.0px 36.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p11 {margin: 0.0px 0.0px 12.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.75); -webkit-text-stroke: rgba(242, 236, 226, 0.75)}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 30.0px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 15.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.7); -webkit-text-stroke: rgba(242, 236, 226, 0.7)}
-    p.p19 {margin: 0.0px 0.0px 18.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.7); -webkit-text-stroke: rgba(242, 236, 226, 0.7)}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Zapf Dingbats'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448; background-color: #f2ece2; background-color: rgba(242, 236, 226, 0.039)}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Apple SD Gothic Neo'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px '.CJK Symbols Fallback SC'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p29 {margin: 0.0px 0.0px 15.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #bc8448; -webkit-text-stroke: #bc8448}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.7); -webkit-text-stroke: rgba(242, 236, 226, 0.7)}
-    li.li2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #8a8475; -webkit-text-stroke: #8a8475}
-    li.li17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.9px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    li.li32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    span.s1 {font-kerning: none; background-color: rgba(12, 12, 13, 0.85)}
-    span.s2 {background-color: rgba(12, 12, 13, 0.85); -webkit-text-stroke: 0px #000000}
-    span.s3 {font-kerning: none; background-color: #687c95}
-    span.s4 {font-kerning: none; background-color: #5a8e77}
-    span.s5 {font-kerning: none; background-color: #977448}
-    span.s6 {font-kerning: none; background-color: #bc8448}
-    span.s7 {font-kerning: none}
-    span.s8 {font-kerning: none; color: #e2be88; -webkit-text-stroke: 0px #e2be88}
-    span.s9 {-webkit-text-stroke: 0px #000000}
-    span.s10 {font-kerning: none; background-color: rgba(242, 236, 226, 0.039)}
-    span.s11 {font-kerning: none; color: #e2be88; background-color: rgba(242, 236, 226, 0.039); -webkit-text-stroke: 0px #e2be88}
-    span.s12 {font: 10.8px 'Helvetica Neue'; font-kerning: none}
-    span.s13 {font: 10.8px 'Helvetica Neue'; font-kerning: none; color: #8a8475; -webkit-text-stroke: 0px #8a8475}
-    ul.ul1 {list-style-type: none}
-  </style>
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///Users/smitaaverma/Downloads/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smitaa Verma — Insurance &amp; AI Strategy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --ink: #0E0E0F;
+    --ivory: #F5F0E8;
+    --muted: #9C9688;
+    --copper: #C9965A;
+    --copper-light: #E8C99A;
+    --rule: rgba(245,240,232,0.12);
+    --card-bg: rgba(245,240,232,0.04);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--ink);
+    color: var(--ivory);
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 3rem;
+    background: rgba(14,14,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 0.5px solid var(--rule);
+  }
+  .nav-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    color: var(--ivory);
+    text-decoration: none;
+  }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--ivory); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 3rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Career arc */
+  .arc-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    display: flex;
+  }
+  .arc-seg {
+    flex: 1;
+    position: relative;
+    transition: opacity 0.3s;
+  }
+  .arc-seg:hover { opacity: 0.8; }
+  .arc-seg-label {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .arc-bar:hover .arc-seg-label { opacity: 1; }
+  .arc-seg:nth-child(1) { background: #7B8FA6; }
+  .arc-seg:nth-child(2) { background: #6B9E8A; }
+  .arc-seg:nth-child(3) { background: #A8875A; }
+  .arc-seg:nth-child(4) { background: #C9965A; }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 400;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+  .hero-name em {
+    font-style: italic;
+    color: var(--copper-light);
+  }
+
+  .hero-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 0.5px solid var(--rule);
+    padding-top: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .hero-title {
+    font-size: 1rem;
+    color: var(--ivory);
+    font-weight: 400;
+    max-width: 480px;
+    line-height: 1.5;
+  }
+  .hero-meta {
+    text-align: right;
+    font-size: 0.75rem;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .hero-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    border: 0.5px solid var(--copper);
+    color: var(--copper);
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+  }
+  .hero-cta:hover { background: var(--copper); color: var(--ink); }
+
+  /* SECTION SCAFFOLDING */
+  section { padding: 6rem 3rem; border-top: 0.5px solid var(--rule); }
+  .section-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--copper);
+    margin-bottom: 3rem;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .about-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+  }
+  .about-headline em { font-style: italic; color: var(--copper-light); }
+  .about-body { font-size: 0.95rem; color: rgba(245,240,232,0.75); margin-bottom: 1rem; }
+  .about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .stat {
+    border-top: 0.5px solid var(--rule);
+    padding-top: 1rem;
+  }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--copper);
+    line-height: 1;
+  }
+  .stat-label { font-size: 0.75rem; color: var(--muted); margin-top: 0.25rem; line-height: 1.4; }
+
+  /* WORK */
+  .work-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 3rem;
+    padding: 2.5rem 0;
+    border-top: 0.5px solid var(--rule);
+    align-items: start;
+  }
+  .work-item:first-of-type { border-top: none; }
+  .work-meta { color: var(--muted); font-size: 0.8rem; line-height: 1.8; }
+  .work-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border: 0.5px solid var(--rule);
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .work-company {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--ivory);
+    margin-bottom: 0.25rem;
+  }
+  .work-role {
+    font-size: 0.85rem;
+    color: var(--copper);
+    margin-bottom: 0.75rem;
+    font-weight: 400;
+  }
+  .work-desc { font-size: 0.875rem; color: rgba(245,240,232,0.7); line-height: 1.7; }
+  .work-wins { list-style: none; margin-top: 0.75rem; }
+  .work-wins li {
+    font-size: 0.825rem;
+    color: var(--ivory);
+    padding: 0.3rem 0;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .work-wins li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--copper);
+    font-size: 0.7rem;
+  }
+
+  /* PIVOT BANNER */
+  .pivot {
+    background: var(--card-bg);
+    border: 0.5px solid rgba(201,150,90,0.25);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .pivot::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 100%;
+    background: var(--copper);
+  }
+  .pivot-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+  }
+  .pivot-headline em { font-style: italic; color: var(--copper-light); }
+  .pivot-body { font-size: 0.9rem; color: rgba(245,240,232,0.7); max-width: 680px; margin-bottom: 1.5rem; }
+  .pivot-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .pivot-tag {
+    padding: 0.35rem 0.9rem;
+    border: 0.5px solid var(--copper);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--copper);
+  }
+
+  /* BEYOND */
+  .beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .beyond-card {
+    background: var(--card-bg);
+    border: 0.5px solid var(--rule);
+    padding: 1.75rem;
+    transition: border-color 0.2s;
+  }
+  .beyond-card:hover { border-color: rgba(201,150,90,0.4); }
+  .beyond-icon { font-size: 1.2rem; color: var(--copper); margin-bottom: 1rem; }
+  .beyond-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+  .beyond-body { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+  .beyond-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--copper);
+    text-decoration: none;
+  }
+  .beyond-link:hover { text-decoration: underline; }
+
+  /* EDUCATION */
+  .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+  .edu-item { border-top: 0.5px solid var(--rule); padding-top: 1.25rem; }
+  .edu-school {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    margin-bottom: 0.25rem;
+  }
+  .edu-detail { font-size: 0.8rem; color: var(--muted); line-height: 1.7; }
+  .edu-honor { font-size: 0.75rem; color: var(--copper); margin-top: 0.25rem; }
+
+  /* CERTS */
+  .certs-list { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  .cert-pill {
+    padding: 0.4rem 1rem;
+    border: 0.5px solid var(--rule);
+    font-size: 0.75rem;
+    color: rgba(245,240,232,0.7);
+    letter-spacing: 0.04em;
+  }
+  .cert-pill.active { border-color: var(--copper); color: var(--copper); }
+
+  /* CONTACT */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .contact-headline {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.2;
+  }
+  .contact-headline em { font-style: italic; color: var(--copper-light); }
+  .contact-links { list-style: none; }
+  .contact-links li { border-top: 0.5px solid var(--rule); padding: 1rem 0; }
+  .contact-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: var(--ivory);
+    font-size: 0.9rem;
+    transition: color 0.2s;
+  }
+  .contact-links a:hover { color: var(--copper); }
+  .contact-arrow { color: var(--muted); transition: transform 0.2s, color 0.2s; }
+  .contact-links a:hover .contact-arrow { transform: translateX(4px); color: var(--copper); }
+
+  /* FOOTER */
+  footer {
+    padding: 2rem 3rem;
+    border-top: 0.5px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: var(--muted);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  /* ANIMATIONS */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: none; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { gap: 1.25rem; }
+    .hero { padding: 0 1.5rem 3.5rem; }
+    section { padding: 4rem 1.5rem; }
+    .about-grid, .contact-grid, .edu-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .work-item { grid-template-columns: 1fr; gap: 0.5rem; }
+    footer { padding: 1.5rem; }
+    .pivot { padding: 1.75rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up { opacity: 1; transform: none; transition: none; }
+  }
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">Smitaa Verma</span></p>
-<ul class="ul1">
-  <li class="li2"><span class="s2"></span><span class="s1">WORK</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">BEYOND</span></li>
-  <li class="li2"><span class="s2"></span><span class="s1">CONTACT</span></li>
-</ul>
-<p class="p3"><span class="s3">ENGINEERING</span></p>
-<p class="p3"><span class="s4">HEALTHCARE &amp; PHARMA</span></p>
-<p class="p3"><span class="s5">INSURANCE &amp; FINTECH</span></p>
-<p class="p3"><span class="s6">AI GOVERNANCE →</span></p>
-<p class="p4"><span class="s7">INSURANCE · AI · STRATEGY</span></p>
-<h1 style="margin: 0.0px 0.0px 24.0px 0.0px; font: 64.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s7">Smitaa<br>
-</span><span class="s8">Verma</span></h1>
-<p class="p1"><span class="s7">15+ years building financial services strategy at scale — now bringing that operational depth to the frontier of AI governance, risk, and audit.</span></p>
-<p class="p6"><span class="s7">IIM Indore · Bocconi University Exchange</span></p>
-<p class="p6"><span class="s7">Houston, TX · Open to advisory &amp; consulting roles</span></p>
-<p class="p7"><span class="s7"></span><br></p>
-<p class="p8"><span class="s7">START A CONVERSATION</span></p>
-<p class="p9"><span class="s7">WHO I AM</span></p>
-<h2 style="margin: 0.0px 0.0px 18.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s7">Strategy that moves<br>
-from </span><span class="s8">insight</span><span class="s7"> to execution</span></h2>
-<p class="p11"><span class="s7">I started as a Gold Medal engineer, went to IIM Indore, and spent 15 years inside some of India's most complex financial services organizations — insurance, wealth, bancassurance, pharma, medtech. I didn't just advise from the outside; I owned P&amp;Ls, led cross-functional teams, filed regulatory documents, and launched products from zero.</span></p>
-<p class="p11"><span class="s7">Now I'm in the US, upskilling hard in AI — particularly how it intersects with regulated industries. My next chapter is at that intersection: helping financial services and healthcare organizations deploy AI responsibly, with the right governance, risk frameworks, and audit trails.</span></p>
-<p class="p11"><span class="s7">I also write, coach, create content, and believe deeply that a multidimensional professional is a more effective one — not despite the range, but because of it.</span></p>
-<p class="p12"><span class="s7">15+</span></p>
-<p class="p2"><span class="s7">Years in financial services &amp; regulated industries</span></p>
-<p class="p12"><span class="s7">$10M+</span></p>
-<p class="p2"><span class="s7">Business impact delivered at Canara HSBC OBC Life</span></p>
-<p class="p12"><span class="s7">60%</span></p>
-<p class="p2"><span class="s7">YoY growth driven at HDFC Life through digital strategy</span></p>
-<p class="p12"><span class="s7">83%</span></p>
-<p class="p2"><span class="s7">Reduction in bancassurance onboarding time</span></p>
-<p class="p9"><span class="s7">CAREER</span></p>
-<p class="p13"><span class="s7">2023 – Present</span></p>
-<p class="p13"><span class="s7">Gurgaon / Remote</span></p>
-<p class="p3"><span class="s7">FINANCIAL ADVISORY</span></p>
-<p class="p14"><span class="s7">Swadhyaay Wealth Management</span></p>
-<p class="p15"><span class="s7">Senior Consultant, Financial Services Strategy</span></p>
-<p class="p16"><span class="s7">Advising Indian and NRI clients on financial planning, insurance solutions, wealth structuring, and long-term capital planning across multiple engagements.</span></p>
-<p class="p13"><span class="s7">2021 – 2023</span></p>
-<p class="p13"><span class="s7">Mumbai</span></p>
-<p class="p3"><span class="s7">INSURANCE · DIGITAL</span></p>
-<p class="p14"><span class="s7">HDFC Life Insurance</span></p>
-<p class="p15"><span class="s7">Head — Health Products &amp; Digital Strategy</span></p>
-<p class="p16"><span class="s7">Led health product strategy and commercialization with P&amp;L responsibility across digital and partner distribution. Coordinated a first-of-its-kind life and health insurance partnership product across two organizations — from regulatory filings to distribution enablement.</span></p>
-<ul class="ul1">
-  <li class="li17"><span class="s9"></span><span class="s7">35% cross-sell growth through customer segmentation and digital adoption</span></li>
-  <li class="li17"><span class="s9"></span><span class="s7">60% YoY portfolio growth via operational transformation</span></li>
-  <li class="li17"><span class="s9"></span><span class="s7">Partnered with actuarial, underwriting, compliance, ops, and tech teams simultaneously</span></li>
-</ul>
-<p class="p13"><span class="s7">2019 – 2021</span></p>
-<p class="p13"><span class="s7">Gurgaon</span></p>
-<p class="p3"><span class="s7">BANCASSURANCE · TRANSFORMATION</span></p>
-<p class="p14"><span class="s7">Canara HSBC OBC Life Insurance</span></p>
-<p class="p15"><span class="s7">Head — Strategy &amp; Transformation</span></p>
-<p class="p16"><span class="s7">Led enterprise bancassurance transformation across 20+ banking partners. Built governance and compliance frameworks supporting regulatory alignment.</span></p>
-<ul class="ul1">
-  <li class="li17"><span class="s9"></span><span class="s7">$10M+ business impact through portfolio optimization and distribution effectiveness</span></li>
-  <li class="li17"><span class="s9"></span><span class="s7">83% reduction in partner onboarding turnaround time</span></li>
-</ul>
-<p class="p13"><span class="s7">2017 – 2019</span></p>
-<p class="p13"><span class="s7">Mumbai</span></p>
-<p class="p3"><span class="s7">PHARMA · PARTNERSHIPS</span></p>
-<p class="p14"><span class="s7">Cipla Pharmaceuticals</span></p>
-<p class="p15"><span class="s7">Senior Head, Strategic Partnerships</span></p>
-<p class="p16"><span class="s7">Managed strategic partnerships and enterprise accounts, leading stakeholder engagement and business growth across regulated pharmaceutical environments.</span></p>
-<p class="p13"><span class="s7">2015 – 2017</span></p>
-<p class="p13"><span class="s7">Mumbai</span></p>
-<p class="p3"><span class="s7">MEDTECH · GTM</span></p>
-<p class="p14"><span class="s7">Medtronic</span></p>
-<p class="p15"><span class="s7">National Head — GTM &amp; Digital Channels</span></p>
-<p class="p16"><span class="s7">Promoted twice within 18 months. Led market access, distribution strategy, and commercial operations across multiple regions with full P&amp;L responsibility.</span></p>
-<ul class="ul1">
-  <li class="li17"><span class="s9"></span><span class="s7">14 strategic institutional agreements across 20+ cities</span></li>
-  <li class="li17"><span class="s9"></span><span class="s7">Implemented digital platforms for CRM, pricing governance, and performance reporting</span></li>
-</ul>
-<p class="p13"><span class="s7">2013 – 2015</span></p>
-<p class="p13"><span class="s7">Mumbai</span></p>
-<p class="p3"><span class="s7">ANALYTICS · CRM</span></p>
-<p class="p14"><span class="s7">Abbott</span></p>
-<p class="p15"><span class="s7">Head — Commercial Strategy &amp; Analytics</span></p>
-<p class="p16"><span class="s7">Led CRM and commercial analytics initiatives across Abbott's Indian operations. Designed data-driven incentive and engagement programs that improved field productivity and retention.</span></p>
-<ul class="ul1">
-  <li class="li17"><span class="s9"></span><span class="s7">1.1M-record Salesforce migration for improved forecasting and pipeline visibility</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s10">The next chapter: </span><span class="s11">AI governance</span><span class="s7"><br>
-</span><span class="s10">in regulated industries</span></h2>
-<p class="p19"><span class="s10">Financial services and healthcare have the most to gain — and the most to lose — from AI deployed carelessly. I'm building the expertise to be the person in the room who understands both the regulatory environment and the technology: AI risk frameworks, audit methodology, security posture, and governance design for organizations that can't afford to get it wrong.</span></p>
-<p class="p20"><span class="s10">AI RISK &amp; AUDIT</span></p>
-<p class="p20"><span class="s10">AI IN INSURANCE</span></p>
-<p class="p20"><span class="s10">PROMPT ENGINEERING</span></p>
-<p class="p20"><span class="s10">GENERATIVE AI</span></p>
-<p class="p20"><span class="s10">AZURE AZ-900</span></p>
-<p class="p20"><span class="s10">IRS AFSP CERTIFIED</span></p>
-<p class="p20"><span class="s10">GOOGLE ANALYTICS GA4</span></p>
-<p class="p9"><span class="s7">BEYOND THE RÉSUMÉ</span></p>
-<p class="p21"><span class="s10">✦</span></p>
-<h3 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s10">Author</span></h3>
-<p class="p13"><span class="s10">Secrets to Landing Your Dream Job: Interview Mastery — available on Amazon. A practical, candid guide to the modern job search, written from real experience on both sides of the table.</span></p>
-<p class="p23"><span class="s7"><a href="https://www.amazon.com/Secrets-Landing-Your-Dream-Job/dp/B0DPVLM747">FIND ON AMAZON →</a></span></p>
-<p class="p24"><span class="s10">◈</span></p>
-<h3 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s10">Educator</span></h3>
-<p class="p13"><span class="s10">Radiant Motherhood: Balancing Career and Motherhood — a Udemy course for ambitious women navigating the challenge of thriving professionally while raising a family.</span></p>
-<p class="p23"><span class="s7"><a href="https://www.udemy.com/course/radiant-motherhood-guide-to-balance-career-and-motherhood">VIEW ON UDEMY →</a></span></p>
-<p class="p25"><span class="s10">◇</span></p>
-<h3 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s10">Certified Life Coach</span></h3>
-<p class="p13"><span class="s10">Coaching women and professionals through career transitions, identity shifts, and the kind of clarity that no spreadsheet can provide. Founder of the Carefree Mom community.</span></p>
-<p class="p23"><span class="s7"><a href="https://www.facebook.com/coachsmitaverma/">CAREFREE MOM COMMUNITY →</a></span></p>
-<p class="p26"><span class="s10">▷</span></p>
-<h3 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s10">Content Creator</span></h3>
-<p class="p13"><span class="s10">Running two YouTube channels — Smitaa Verma and Carefree Mom — exploring career strategy, life design, and the real experience of a multidimensional professional life.</span></p>
-<p class="p23"><span class="s7"><a href="https://www.youtube.com/@SmitaaVerma">YOUTUBE: SMITAA VERMA →</a></span></p>
-<p class="p9"><span class="s7">EDUCATION</span></p>
-<h3 style="margin: 0.0px 0.0px 3.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s7">Indian Institute of Management, Indore</span></h3>
-<p class="p13"><span class="s7">MBA, Operations &amp; Strategy</span></p>
-<p class="p13"><span class="s7">Exchange Program: Bocconi University, Milan</span></p>
-<p class="p28"><span class="s7">Ranked 1st of 450 students in Operations — 4.02 / 5.0 GPA</span></p>
-<h3 style="margin: 0.0px 0.0px 3.0px 0.0px; font: 12.6px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s7">Indira Gandhi Delhi Technical University</span></h3>
-<p class="p13"><span class="s7">Bachelor of Technology (Engineering)</span></p>
-<p class="p28"><span class="s7">Gold Medalist, Second Year</span></p>
-<p class="p13"><span class="s7">General Electric Leadership Fellowship</span></p>
-<p class="p29"><span class="s7">CERTIFICATIONS &amp; LICENSES</span></p>
-<p class="p28"><span class="s7">IRS AFSP — Valid through 2029</span></p>
-<p class="p28"><span class="s7">Advanced Prompt Engineering</span></p>
-<p class="p28"><span class="s7">Generative AI</span></p>
-<p class="p30"><span class="s7">Microsoft Azure AZ-900 (In Progress)</span></p>
-<p class="p30"><span class="s7">Google Analytics GA4 (In Progress)</span></p>
-<p class="p30"><span class="s7">Licensed Insurance Advisor — Tata AIA</span></p>
-<p class="p9"><span class="s7">LET'S TALK</span></p>
-<h2 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 24.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2"><span class="s7">Consulting,<br>
-advisory,<br>
-</span><span class="s8">collaboration.</span></h2>
-<ul class="ul1">
-  <li class="li32"><span class="s9"><a href="https://linkedin.com/in/smverma/"><span class="s12">LinkedIn<br>
-</span><span class="s13">→</span></a></span></li>
-  <li class="li32"><span class="s9"><a href="https://www.youtube.com/@SmitaaVerma"><span class="s12">YouTube — Smitaa Verma<br>
-</span><span class="s13">→</span></a></span></li>
-  <li class="li32"><span class="s9"><a href="https://www.youtube.com/@Carefreemom"><span class="s12">YouTube — Carefree Mom<br>
-</span><span class="s13">→</span></a></span></li>
-  <li class="li32"><span class="s9"><a href="https://www.facebook.com/coachsmitaverma/"><span class="s12">Facebook — Coach Smitaa<br>
-</span><span class="s13">→</span></a></span></li>
-  <li class="li32"><span class="s9"><a href="https://www.amazon.com/Secrets-Landing-Your-Dream-Job/dp/B0DPVLM747"><span class="s12">Book on Amazon<br>
-</span><span class="s13">→</span></a></span></li>
-</ul>
-<p class="p2"><span class="s7">© 2026 Smitaa Verma</span></p>
-<p class="p2"><span class="s7">Insurance · AI · Strategy · Houston, TX</span></p>
-</body>
-</html>
+
+<nav>
+  <a href="file:///Users/smitaaverma/Downloads/index.html#" class="nav-name">Smitaa Verma</a>
+  <ul class="nav-links">
+    <li><a href="file:///Users/smitaaverma/Downloads/index.html#work">Work</a></li>
+    <li><a href="file:///Users/smitaaverma/Downloads/index.html#beyond">Beyond</a></li>
+    <li><a href="file:///Users/smitaaverma/Downloads/index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="arc-bar" aria-label="Career arc: Engineering, Healthcare, Insurance, AI Governance">
+    <div class="arc-seg"><span class="arc-seg-label">Engineering</span></div>
+    <div class="arc-seg"><span class="arc-seg-label">Healthcare &amp; Pharma</span></div>
+    <div class="arc-seg"><span class="arc-seg-label">Insurance &amp; Fintech</span></div>
+    <div class="arc-seg"><span class="arc-seg-label">AI Governance →</span></div>
+  </div>
+
+  <p class="hero-eyebrow">Insurance · AI · Strategy</p>
+
+  <h1 class="hero-name">
+    Smitaa<br><em>Verma</em>
+  </h1>
+
+  <div class="hero-bottom">
+    <p class="hero-title">
+      15+ years building financial services strategy at scale — now bringing that operational depth to the frontier of AI governance, risk, and audit.
+    </p>
+    <div class="hero-meta">
+      IIM Indore · Bocconi University Exchange<br>
+      Houston, TX · Open to advisory &amp; consulting roles<br><br>
+      <a href="file:///Users/smitaaverma/Downloads/index.html#contact" class="hero-cta">Start a conversation</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">Who I am</p>
+  <div class="about-grid">
+    <div class="fade-up visible">
+      <h2 class="about-headline">
+        Strategy that moves<br>from <em>insight</em> to execution
+      </h2>
+      <p class="about-body">
+        I started as a Gold Medal engineer, went to IIM Indore, and spent 15 years inside some of India's most complex financial services organizations — insurance, wealth, bancassurance, pharma, medtech. I didn't just advise from the outside; I owned P&amp;Ls, led cross-functional teams, filed regulatory documents, and launched products from zero.
+      </p>
+      <p class="about-body">
+        Now I'm in the US, upskilling hard in AI — particularly how it intersects with regulated industries. My next chapter is at that intersection: helping financial services and healthcare organizations deploy AI responsibly, with the right governance, risk frameworks, and audit trails.
+      </p>
+      <p class="about-body">
+        I also write, coach, create content, and believe deeply that a multidimensional professional is a more effective one — not despite the range, but because of it.
+      </p>
+    </div>
+    <div class="about-stats fade-up visible">
+      <div class="stat">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Years in financial services &amp; regulated industries</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">$10M+</div>
+        <div class="stat-label">Business impact delivered at Canara HSBC OBC Life</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">60%</div>
+        <div class="stat-label">YoY growth driven at HDFC Life through digital strategy</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">83%</div>
+        <div class="stat-label">Reduction in bancassurance onboarding time</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <p class="section-label">Career</p>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2023 – Present<br>Gurgaon / Remote</div>
+    <div>
+      <span class="work-tag">Financial Advisory</span>
+      <div class="work-company">Swadhyaay Wealth Management</div>
+      <div class="work-role">Senior Consultant, Financial Services Strategy</div>
+      <p class="work-desc">Advising Indian and NRI clients on financial planning, insurance solutions, wealth structuring, and long-term capital planning across multiple engagements.</p>
+    </div>
+  </div>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2021 – 2023<br>Mumbai</div>
+    <div>
+      <span class="work-tag">Insurance · Digital</span>
+      <div class="work-company">HDFC Life Insurance</div>
+      <div class="work-role">Head — Health Products &amp; Digital Strategy</div>
+      <p class="work-desc">Led health product strategy and commercialization with P&amp;L responsibility across digital and partner distribution. Coordinated a first-of-its-kind life and health insurance partnership product across two organizations — from regulatory filings to distribution enablement.</p>
+      <ul class="work-wins">
+        <li>35% cross-sell growth through customer segmentation and digital adoption</li>
+        <li>60% YoY portfolio growth via operational transformation</li>
+        <li>Partnered with actuarial, underwriting, compliance, ops, and tech teams simultaneously</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2019 – 2021<br>Gurgaon</div>
+    <div>
+      <span class="work-tag">Bancassurance · Transformation</span>
+      <div class="work-company">Canara HSBC OBC Life Insurance</div>
+      <div class="work-role">Head — Strategy &amp; Transformation</div>
+      <p class="work-desc">Led enterprise bancassurance transformation across 20+ banking partners. Built governance and compliance frameworks supporting regulatory alignment.</p>
+      <ul class="work-wins">
+        <li>$10M+ business impact through portfolio optimization and distribution effectiveness</li>
+        <li>83% reduction in partner onboarding turnaround time</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2017 – 2019<br>Mumbai</div>
+    <div>
+      <span class="work-tag">Pharma · Partnerships</span>
+      <div class="work-company">Cipla Pharmaceuticals</div>
+      <div class="work-role">Senior Head, Strategic Partnerships</div>
+      <p class="work-desc">Managed strategic partnerships and enterprise accounts, leading stakeholder engagement and business growth across regulated pharmaceutical environments.</p>
+    </div>
+  </div>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2015 – 2017<br>Mumbai</div>
+    <div>
+      <span class="work-tag">Medtech · GTM</span>
+      <div class="work-company">Medtronic</div>
+      <div class="work-role">National Head — GTM &amp; Digital Channels</div>
+      <p class="work-desc">Promoted twice within 18 months. Led market access, distribution strategy, and commercial operations across multiple regions with full P&amp;L responsibility.</p>
+      <ul class="work-wins">
+        <li>14 strategic institutional agreements across 20+ cities</li>
+        <li>Implemented digital platforms for CRM, pricing governance, and performance reporting</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="work-item fade-up visible">
+    <div class="work-meta">2013 – 2015<br>Mumbai</div>
+    <div>
+      <span class="work-tag">Analytics · CRM</span>
+      <div class="work-company">Abbott</div>
+      <div class="work-role">Head — Commercial Strategy &amp; Analytics</div>
+      <p class="work-desc">Led CRM and commercial analytics initiatives across Abbott's Indian operations. Designed data-driven incentive and engagement programs that improved field productivity and retention.</p>
+      <ul class="work-wins">
+        <li>1.1M-record Salesforce migration for improved forecasting and pipeline visibility</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AI PIVOT BANNER -->
+<section style="padding: 0 3rem 6rem;">
+  <div class="pivot fade-up visible">
+    <h2 class="pivot-headline">
+      The next chapter: <em>AI governance</em><br>in regulated industries
+    </h2>
+    <p class="pivot-body">
+      Financial services and healthcare have the most to gain — and the most to lose — from AI deployed carelessly. I'm building the expertise to be the person in the room who understands both the regulatory environment and the technology: AI risk frameworks, audit methodology, security posture, and governance design for organizations that can't afford to get it wrong.
+    </p>
+    <div class="pivot-tags">
+      <span class="pivot-tag">AI Risk &amp; Audit</span>
+      <span class="pivot-tag">AI in Insurance</span>
+      <span class="pivot-tag">Prompt Engineering</span>
+      <span class="pivot-tag">Generative AI</span>
+      <span class="pivot-tag">Azure AZ-900</span>
+      <span class="pivot-tag">IRS AFSP Certified</span>
+      <span class="pivot-tag">Google Analytics GA4</span>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section id="beyond">
+  <p class="section-label">Beyond the résumé</p>
+  <div class="beyond-grid">
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">✦</div>
+      <h3 class="beyond-title">Author</h3>
+      <p class="beyond-body"><em>Secrets to Landing Your Dream Job: Interview Mastery</em> — available on Amazon. A practical, candid guide to the modern job search, written from real experience on both sides of the table.</p>
+      <a href="https://www.amazon.com/Secrets-Landing-Your-Dream-Job/dp/B0DPVLM747" class="beyond-link" target="_blank" rel="noopener">Find on Amazon →</a>
+    </div>
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">◈</div>
+      <h3 class="beyond-title">Educator</h3>
+      <p class="beyond-body"><em>Radiant Motherhood: Balancing Career and Motherhood</em> — a Udemy course for ambitious women navigating the challenge of thriving professionally while raising a family.</p>
+      <a href="https://www.udemy.com/course/radiant-motherhood-guide-to-balance-career-and-motherhood" class="beyond-link" target="_blank" rel="noopener">View on Udemy →</a>
+    </div>
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">◇</div>
+      <h3 class="beyond-title">Certified Life Coach</h3>
+      <p class="beyond-body">Coaching women and professionals through career transitions, identity shifts, and the kind of clarity that no spreadsheet can provide. Founder of the Carefree Mom community.</p>
+      <a href="https://www.facebook.com/coachsmitaverma/" class="beyond-link" target="_blank" rel="noopener">Carefree Mom community →</a>
+    </div>
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">▷</div>
+      <h3 class="beyond-title">Content Creator</h3>
+      <p class="beyond-body">Running two YouTube channels — <em>Smitaa Verma</em> and <em>Carefree Mom</em> — exploring career strategy, life design, and the real experience of a multidimensional professional life.</p>
+      <a href="https://www.youtube.com/@SmitaaVerma" class="beyond-link" target="_blank" rel="noopener">YouTube: Smitaa Verma →</a>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <p class="section-label">Education</p>
+  <div class="edu-grid fade-up visible">
+    <div class="edu-item">
+      <h3 class="edu-school">Indian Institute of Management, Indore</h3>
+      <p class="edu-detail">MBA, Operations &amp; Strategy</p>
+      <p class="edu-detail">Exchange Program: Bocconi University, Milan</p>
+      <p class="edu-honor">Ranked 1st of 450 students in Operations — 4.02 / 5.0 GPA</p>
+    </div>
+    <div class="edu-item">
+      <h3 class="edu-school">Indira Gandhi Delhi Technical University</h3>
+      <p class="edu-detail">Bachelor of Technology (Engineering)</p>
+      <p class="edu-honor">Gold Medalist, Second Year</p>
+      <p class="edu-detail" style="margin-top:0.5rem;">General Electric Leadership Fellowship</p>
+    </div>
+  </div>
+
+  <div style="margin-top: 3rem;">
+    <p class="section-label" style="margin-bottom: 1.25rem;">Certifications &amp; Licenses</p>
+    <div class="certs-list fade-up visible">
+      <span class="cert-pill active">IRS AFSP — Valid through 2029</span>
+      <span class="cert-pill active">Advanced Prompt Engineering</span>
+      <span class="cert-pill active">Generative AI</span>
+      <span class="cert-pill">Microsoft Azure AZ-900 (In Progress)</span>
+      <span class="cert-pill">Google Analytics GA4 (In Progress)</span>
+      <span class="cert-pill">Licensed Insurance Advisor — Tata AIA</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label">Let's talk</p>
+  <div class="contact-grid">
+    <h2 class="contact-headline fade-up visible">
+      Consulting,<br>advisory,<br><em>collaboration.</em>
+    </h2>
+    <ul class="contact-links fade-up visible">
+      <li>
+        <a href="https://linkedin.com/in/smverma/" target="_blank" rel="noopener">
+          <span>LinkedIn</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@SmitaaVerma" target="_blank" rel="noopener">
+          <span>YouTube — Smitaa Verma</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@Carefreemom" target="_blank" rel="noopener">
+          <span>YouTube — Carefree Mom</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/coachsmitaverma/" target="_blank" rel="noopener">
+          <span>Facebook — Coach Smitaa</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.amazon.com/Secrets-Landing-Your-Dream-Job/dp/B0DPVLM747" target="_blank" rel="noopener">
+          <span>Book on Amazon</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Smitaa Verma</span>
+  <span>Insurance · AI · Strategy · Houston, TX</span>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+
+
+</body></html>
