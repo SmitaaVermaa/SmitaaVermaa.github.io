@@ -1,23 +1,42 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)file:///Users/smitaaverma/Downloads/index.html -->
+<!-- Smita Verma — SmitaVerma.github.io -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+  (function() {
+    var saved = localStorage.getItem('theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+  })();
+</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smitaa Verma — Insurance &amp; AI Strategy</title>
+<title>Smita Verma — Insurance &amp; AI Strategy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./index_files/css2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
     --ink: #0E0E0F;
     --ivory: #F5F0E8;
+    --ink-rgb: 14,14,15;
+    --ivory-rgb: 245,240,232;
     --muted: #9C9688;
     --copper: #C9965A;
     --copper-light: #E8C99A;
-    --rule: rgba(245,240,232,0.12);
-    --card-bg: rgba(245,240,232,0.04);
+    --rule: rgba(var(--ivory-rgb),0.12);
+    --card-bg: rgba(var(--ivory-rgb),0.04);
+  }
+
+  html[data-theme="light"] {
+    --ink: #F5F0E8;
+    --ivory: #17140F;
+    --ink-rgb: 245,240,232;
+    --ivory-rgb: 23,20,15;
+    --muted: #6B6558;
+    --copper: #A9713C;
+    --copper-light: #8B5E34;
   }
 
   html { scroll-behavior: smooth; }
@@ -29,6 +48,7 @@
     font-weight: 300;
     line-height: 1.7;
     -webkit-font-smoothing: antialiased;
+    transition: background 0.3s ease, color 0.3s ease;
   }
 
   /* NAV */
@@ -36,10 +56,28 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.25rem 3rem;
-    background: rgba(14,14,15,0.85);
+    background: rgba(var(--ink-rgb),0.85);
     backdrop-filter: blur(12px);
     border-bottom: 0.5px solid var(--rule);
+    transition: background 0.3s ease, border-color 0.3s ease;
   }
+  .nav-right { display: flex; align-items: center; gap: 2rem; }
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    border: 0.5px solid var(--rule);
+    background: none;
+    color: var(--ivory);
+    font-size: 0.9rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .theme-toggle:hover { border-color: var(--copper); color: var(--copper); }
   .nav-name {
     font-family: 'Playfair Display', serif;
     font-size: 1rem;
@@ -182,7 +220,7 @@
     margin-bottom: 1.5rem;
   }
   .about-headline em { font-style: italic; color: var(--copper-light); }
-  .about-body { font-size: 0.95rem; color: rgba(245,240,232,0.75); margin-bottom: 1rem; }
+  .about-body { font-size: 0.95rem; color: rgba(var(--ivory-rgb),0.75); margin-bottom: 1rem; }
   .about-stats {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -234,7 +272,7 @@
     margin-bottom: 0.75rem;
     font-weight: 400;
   }
-  .work-desc { font-size: 0.875rem; color: rgba(245,240,232,0.7); line-height: 1.7; }
+  .work-desc { font-size: 0.875rem; color: rgba(var(--ivory-rgb),0.7); line-height: 1.7; }
   .work-wins { list-style: none; margin-top: 0.75rem; }
   .work-wins li {
     font-size: 0.825rem;
@@ -271,7 +309,7 @@
     margin-bottom: 1rem;
   }
   .pivot-headline em { font-style: italic; color: var(--copper-light); }
-  .pivot-body { font-size: 0.9rem; color: rgba(245,240,232,0.7); max-width: 680px; margin-bottom: 1.5rem; }
+  .pivot-body { font-size: 0.9rem; color: rgba(var(--ivory-rgb),0.7); max-width: 680px; margin-bottom: 1.5rem; }
   .pivot-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
   .pivot-tag {
     padding: 0.35rem 0.9rem;
@@ -330,7 +368,7 @@
     padding: 0.4rem 1rem;
     border: 0.5px solid var(--rule);
     font-size: 0.75rem;
-    color: rgba(245,240,232,0.7);
+    color: rgba(var(--ivory-rgb),0.7);
     letter-spacing: 0.04em;
   }
   .cert-pill.active { border-color: var(--copper); color: var(--copper); }
@@ -404,12 +442,18 @@
 <body>
 
 <nav>
-  <a href="file:///Users/smitaaverma/Downloads/index.html#" class="nav-name">Smitaa Verma</a>
-  <ul class="nav-links">
-    <li><a href="file:///Users/smitaaverma/Downloads/index.html#work">Work</a></li>
-    <li><a href="file:///Users/smitaaverma/Downloads/index.html#beyond">Beyond</a></li>
-    <li><a href="file:///Users/smitaaverma/Downloads/index.html#contact">Contact</a></li>
-  </ul>
+  <a href="#" class="nav-name">Smita Verma</a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#portfolio">AI Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+      <span id="theme-icon">☀</span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -424,7 +468,7 @@
   <p class="hero-eyebrow">Insurance · AI · Strategy</p>
 
   <h1 class="hero-name">
-    Smitaa<br><em>Verma</em>
+    Smita<br><em>Verma</em>
   </h1>
 
   <div class="hero-bottom">
@@ -434,7 +478,7 @@
     <div class="hero-meta">
       IIM Indore · Bocconi University Exchange<br>
       Houston, TX · Open to advisory &amp; consulting roles<br><br>
-      <a href="file:///Users/smitaaverma/Downloads/index.html#contact" class="hero-cta">Start a conversation</a>
+      <a href="#contact" class="hero-cta">Start a conversation</a>
     </div>
   </div>
 </header>
@@ -573,9 +617,11 @@
       <span class="pivot-tag">AI in Insurance</span>
       <span class="pivot-tag">Prompt Engineering</span>
       <span class="pivot-tag">Generative AI</span>
-      <span class="pivot-tag">Azure AZ-900</span>
+      <span class="pivot-tag">Claude 101 Certified</span>
+      <span class="pivot-tag">Advanced Claude (Pursuing)</span>
       <span class="pivot-tag">IRS AFSP Certified</span>
-      <span class="pivot-tag">Google Analytics GA4</span>
+      <span class="pivot-tag">Slack</span>
+      <span class="pivot-tag">Jira</span>
     </div>
   </div>
 </section>
@@ -605,7 +651,7 @@
     <div class="beyond-card fade-up visible">
       <div class="beyond-icon">▷</div>
       <h3 class="beyond-title">Content Creator</h3>
-      <p class="beyond-body">Running two YouTube channels — <em>Smitaa Verma</em> and <em>Carefree Mom</em> — exploring career strategy, life design, and the real experience of a multidimensional professional life.</p>
+      <p class="beyond-body">Running two YouTube channels — <em>Smita Verma</em> and <em>Carefree Mom</em> — exploring career strategy, life design, and the real experience of a multidimensional professional life.</p>
       <a href="https://www.youtube.com/@SmitaaVerma" class="beyond-link" target="_blank" rel="noopener">YouTube: Smitaa Verma →</a>
     </div>
   </div>
@@ -633,11 +679,38 @@
     <p class="section-label" style="margin-bottom: 1.25rem;">Certifications &amp; Licenses</p>
     <div class="certs-list fade-up visible">
       <span class="cert-pill active">IRS AFSP — Valid through 2029</span>
+      <span class="cert-pill active">Claude 101 Certified</span>
       <span class="cert-pill active">Advanced Prompt Engineering</span>
-      <span class="cert-pill active">Generative AI</span>
-      <span class="cert-pill">Microsoft Azure AZ-900 (In Progress)</span>
-      <span class="cert-pill">Google Analytics GA4 (In Progress)</span>
-      <span class="cert-pill">Licensed Insurance Advisor — Tata AIA</span>
+      <span class="cert-pill active">Generative AI for Business</span>
+      <span class="cert-pill active">Licensed Insurance Advisor — Tata AIA</span>
+      <span class="cert-pill">Advanced Claude Certification (Pursuing)</span>
+      <span class="cert-pill active">Slack</span>
+      <span class="cert-pill active">Jira</span>
+    </div>
+  </div>
+</section>
+
+<!-- AI PROJECTS PORTFOLIO -->
+<section id="portfolio">
+  <p class="section-label">AI Projects</p>
+  <div class="beyond-grid">
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">⚖️</div>
+      <h3 class="beyond-title">Legal Document Summarizer</h3>
+      <p class="beyond-body">AI-powered tool that reads contracts and outputs plain English summaries with key clause flags. Built with Claude API.</p>
+      <a href="https://github.com/SmitaVermaa" class="beyond-link" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">📋</div>
+      <h3 class="beyond-title">Legal Client Intake Bot</h3>
+      <p class="beyond-body">Automated intake workflow that turns client form responses into attorney-ready briefs using Claude + Make.com.</p>
+      <a href="https://github.com/SmitaVermaa" class="beyond-link" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="beyond-card fade-up visible">
+      <div class="beyond-icon">📧</div>
+      <h3 class="beyond-title">AI Email Workflow</h3>
+      <p class="beyond-body">Gmail automation that drafts professional legal responses using Claude as a paralegal assistant via MCP connectors.</p>
+      <a href="https://github.com/SmitaVermaa" class="beyond-link" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
   </div>
 </section>
@@ -657,6 +730,12 @@
         </a>
       </li>
       <li>
+        <a href="https://github.com/SmitaVermaa" target="_blank" rel="noopener">
+          <span>GitHub — AI Projects Portfolio</span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </li>
+      <li>
         <a href="https://www.youtube.com/@SmitaaVerma" target="_blank" rel="noopener">
           <span>YouTube — Smitaa Verma</span>
           <span class="contact-arrow">→</span>
@@ -670,7 +749,7 @@
       </li>
       <li>
         <a href="https://www.facebook.com/coachsmitaverma/" target="_blank" rel="noopener">
-          <span>Facebook — Coach Smitaa</span>
+          <span>Facebook — Coach Smita</span>
           <span class="contact-arrow">→</span>
         </a>
       </li>
@@ -685,7 +764,7 @@
 </section>
 
 <footer>
-  <span>© 2026 Smitaa Verma</span>
+  <span>© 2026 Smita Verma</span>
   <span>Insurance · AI · Strategy · Houston, TX</span>
 </footer>
 
@@ -699,6 +778,30 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+
+  function updateIcon() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    themeIcon.textContent = isLight ? '☾' : '☀';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+    updateIcon();
+  });
+
+  updateIcon();
 </script>
 
 
